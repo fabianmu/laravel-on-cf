@@ -1,0 +1,10 @@
+---
+applications:
+  - name: laravel-on-cf
+    buildpacks:
+      - php_buildpack
+    memory: 128M
+    env:
+      APP_ENV: production
+      APP_DEBUG: false
+      APP_KEY: base64:fFYL2k9ClckwB/TNzu1rbx2IOojSvUlWUp4sPH+UCIw=
