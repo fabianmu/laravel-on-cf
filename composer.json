@@ -46,6 +46,18 @@
             "@php artisan key:generate"
         ],
         "post-autoload-dump": [
+            "mkdir ./bootstrap/cache/",
+            "chmod -R 775 ./bootstrap/cache/",
+            "mkdir ./storage",
+            "mkdir ./storage/framework",
+            "mkdir ./storage/framework/cache/",
+            "mkdir ./storage/framework/sessions/",
+            "mkdir ./storage/framework/testing/",
+            "mkdir ./storage/framework/views/",
+            "chmod -R 775 ./storage/framework/cache/",
+            "chmod -R 775 ./storage/framework/sessions/",
+            "chmod -R 775 ./storage/framework/testing/",
+            "chmod -R 775 ./storage/framework/views/",
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover"
         ]
